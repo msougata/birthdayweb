@@ -1,0 +1,28 @@
+.decorate-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+  text-align: center;
+}
+
+.decorate-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ff1493;
+  margin-bottom: 10px;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.decorate-subtext {
+  font-size: 1.2rem;
+  color: #333;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
