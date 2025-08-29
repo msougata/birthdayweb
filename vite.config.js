@@ -1,11 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  base: "/birthdayweb/",
+  base: "/birthdayweb/", // <-- important
   plugins: [react()],
-  server: {
-    port: 5173, // Set your fixed port here
-  },
 })

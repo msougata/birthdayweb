@@ -1,6 +1,6 @@
 // src/App.jsx
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import Home from './home';
 import Memories from "./Memories";
 import Puzzle from "./Puzzle";
@@ -9,6 +9,7 @@ import Decorate from "./Decorate";
 export default function App() {
   return (
     <div>
+      <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/memories" element={<Memories />} />
@@ -16,6 +17,7 @@ export default function App() {
         <Route path="/decorate" element={<Decorate />} />
 
       </Routes>
+      </HashRouter>
     </div>
   );
 }
